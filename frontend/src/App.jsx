@@ -4,6 +4,7 @@ import News from './pages/News';
 import Blogs from './pages/Blogs';
 import Forums from './pages/Forums';
 import Navbar from './components/Header';
+import NewsDetail from './components/NewsDetail';
 export default function App() {
   return (
     <div>
@@ -12,6 +13,7 @@ export default function App() {
         <Routes>
           <Route path='/' element={<Home/>} />
           <Route path='/news' element={<News/>} />
+          <Route path='/news/:id' element={<NewsDetail/>} />
           <Route path='/blogs' element={<Blogs/>} />
           <Route path='/forums' element={<Forums/>} />
         </Routes>
